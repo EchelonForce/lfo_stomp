@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "STOMPLFO ")
+    (date "2022-06-25")
+    (rev "1.0")
+    (company "RobotDialogs")
+  )
+
   (lib_symbols
     (symbol "Amplifier_Operational:TL072" (pin_names (offset 0.127)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at 0 5.08 0)
@@ -1806,6 +1813,7 @@
     )
   )
 
+
   (junction (at 76.835 35.56) (diameter 0) (color 0 0 0 0)
     (uuid 00a13fde-3b09-4494-8b5a-2c9ac471d731)
   )
@@ -2572,11 +2580,11 @@
     (pin "1" (uuid 923b0ead-6a87-496f-9c49-53dc986710e4))
   )
 
-  (symbol (lib_id "Device:R_Potentiometer_MountingPin") (at 96.52 158.75 0) (unit 1)
+  (symbol (lib_id "Device:R_Potentiometer_MountingPin") (at 96.52 158.75 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 1b305f67-c300-42f5-bc73-d4d3f77801f8)
-    (property "Reference" "R_FREQ100" (id 0) (at 90.17 154.94 0))
-    (property "Value" "B100K" (id 1) (at 90.17 162.56 0))
+    (property "Reference" "R_FREQ100" (id 0) (at 90.17 162.56 0))
+    (property "Value" "B100K" (id 1) (at 90.17 154.94 0))
     (property "Footprint" "My Stuff:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_w_3d" (id 2) (at 96.52 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3099,11 +3107,11 @@
     (pin "2" (uuid f729a5f7-3888-40f1-97e9-67a75d69b3cb))
   )
 
-  (symbol (lib_id "Device:R_Potentiometer_MountingPin") (at 96.52 92.71 0) (unit 1)
+  (symbol (lib_id "Device:R_Potentiometer_MountingPin") (at 96.52 92.71 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 64948371-b3f7-4cb4-9dcd-f90694f8f4e7)
-    (property "Reference" "R_OFFSET100" (id 0) (at 88.9 88.9 0))
-    (property "Value" "B100K" (id 1) (at 91.44 96.52 0))
+    (property "Reference" "R_OFFSET100" (id 0) (at 88.9 96.52 0))
+    (property "Value" "B100K" (id 1) (at 91.44 88.9 0))
     (property "Footprint" "My Stuff:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_w_3d" (id 2) (at 96.52 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4048,11 +4056,11 @@
     (pin "1" (uuid af77c761-fed6-4456-baa2-98ba31d111f8))
   )
 
-  (symbol (lib_id "Device:R_Potentiometer_MountingPin") (at 96.52 130.81 0) (unit 1)
+  (symbol (lib_id "Device:R_Potentiometer_MountingPin") (at 96.52 130.81 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e5926be9-c577-46f6-96cf-d0cd09f7c361)
-    (property "Reference" "R_DEPTH100" (id 0) (at 90.17 127 0))
-    (property "Value" "B100K" (id 1) (at 91.44 133.35 0))
+    (property "Reference" "R_DEPTH100" (id 0) (at 90.17 134.62 0))
+    (property "Value" "B100K" (id 1) (at 91.44 128.27 0))
     (property "Footprint" "My Stuff:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_w_3d" (id 2) (at 96.52 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4065,11 +4073,11 @@
     (pin "MP" (uuid c88a4edb-20d0-46f5-96ac-429c82450b41))
   )
 
-  (symbol (lib_id "Device:R_Potentiometer_MountingPin") (at 96.52 144.78 0) (unit 1)
+  (symbol (lib_id "Device:R_Potentiometer_MountingPin") (at 96.52 144.78 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid e5c635bc-23f1-4d96-9430-3fdd2912ab14)
-    (property "Reference" "R_WAVEFORM100" (id 0) (at 86.36 140.97 0))
-    (property "Value" "B100K" (id 1) (at 90.17 148.59 0))
+    (property "Reference" "R_WAVEFORM100" (id 0) (at 86.36 148.59 0))
+    (property "Value" "B100K" (id 1) (at 90.17 140.97 0))
     (property "Footprint" "My Stuff:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_w_3d" (id 2) (at 96.52 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
