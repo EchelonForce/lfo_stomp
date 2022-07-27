@@ -9,3 +9,9 @@ There's another Op-amp available on the output buffer. Maybe make an inverted ou
 
 https://tinyurl.com/252rokoo
 
+
+v1 pcb issues
+
+- Filter from the data sheet that I used with the output buffer/amp's R4 created a voltage divider that makes the output 0-5V instead of 0-10V. Need to try R8+R5=430k and R7=30k to see if that cranks it up to 0-10V as desired. see https://tinyurl.com/2bfdjrho
+- U4 missing on bom, maybe a mistake in cleanup in google doc
+- R10 could/should be two 1k's instead of a 2k to reduce number of components.
