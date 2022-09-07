@@ -2,7 +2,7 @@ Stomp-LFO Design Notes
 
 Data sheet has a simple filter to smooth out the PDM output to make the actual LFO output. That seems okay on the breadboard. 
 
-Initially on the breadboard I had the 7805 regulator backwards so it got super hot and let somekind of bad voltage through to the STOMPLFO, so that chip misbehaved after I corrected the regulator. It was drawing 80mA at 5V and I couldn't figure out why and the data sheet doesn't list a typical current. Sinc it was sort of working I started measuring the output, but was only getting 0 to ~2.5V at the output PDM pin. At this point I decided to try another chip and the new one behaved as expected, so I just fried that first chip and then had to troubleshoot to figure that out.
+Initially on the breadboard I had the 7805 regulator backwards so it got super hot and let somekind of bad voltage through to the STOMPLFO, so that chip misbehaved after I corrected the regulator. It was drawing 80mA at 5V and I couldn't figure out why and the data sheet doesn't list a typical current. Since it was sort of working I started measuring the output, but was only getting 0 to ~2.5V at the output PDM pin. At this point I decided to try another chip and the new one behaved as expected, so I just fried that first chip and then had to troubleshoot to figure that out.
 
 Breadboard doesn't have an LED output, but I like having one for LFOs, so add that in v1 PCB.
 There's another Op-amp available on the output buffer. Maybe make an inverted output if there's room on the panel for another jack.
@@ -11,7 +11,6 @@ https://tinyurl.com/252rokoo
 
 
 v1 pcb issues
-
-- Filter from the data sheet that I used with the output buffer/amp's R4 created a voltage divider that makes the output 0-5V instead of 0-10V. Need to try R8+R5=430k and R7=30k to see if that cranks it up to 0-10V as desired. see https://tinyurl.com/2bfdjrho
-- U4 missing on bom, maybe a mistake in cleanup in google doc
+- Filter from the data sheet that I used with the output buffer/amp's R4 created a voltage divider that makes the output 0-5V instead of 0-10V. 
+    - Using (R8+R5=430k and R7=30k) cranks it up to 0-10V as desired. see https://tinyurl.com/2bfdjrho
 - R10 could/should be two 1k's instead of a 2k to reduce number of components.
